@@ -13,7 +13,6 @@ export default function About() {
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
-
                     {/* Left Column: The Manifesto */}
                     <div className="w-full lg:w-1/2">
                         <span className="text-cyan-400 font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">

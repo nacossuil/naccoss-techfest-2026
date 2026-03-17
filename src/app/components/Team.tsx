@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ScrollReveal from './ScrollReveal';
 
 export default function Team() {
   const team = [
@@ -22,6 +23,8 @@ export default function Team() {
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
+        <ScrollReveal delay={0.3}>
+            
         <div className="flex flex-col items-center text-center mb-16">
           <span className="text-blue-500 font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">
             <span className="w-2 h-2 bg-blue-500 rounded-sm"></span>
@@ -35,7 +38,10 @@ export default function Team() {
           </p>
         </div>
 
+        </ScrollReveal>
         {/* Team Grid */}
+        <ScrollReveal delay={0.5}>
+            
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {team.map((member) => (
             <div 
@@ -84,6 +90,7 @@ export default function Team() {
             </div>
           ))}
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
