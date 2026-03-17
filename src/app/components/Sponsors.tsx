@@ -15,7 +15,7 @@ export default function Sponsors() {
 
       <div className="max-w-7xl mx-auto px-6 mb-10 text-center relative z-20">
         <p className="text-gray-500 font-mono text-sm tracking-widest uppercase">
-          Backed by industry leaders
+          {/* Backed by industry leaders */} Our Sponsors
         </p>
       </div>
 

@@ -1,9 +1,11 @@
-import Image from "next/image";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
 import Agenda from "./components/Agenda";
 import Sponsors from "./components/Sponsors";
+import Faq from "./components/Faq";
+import Team from "./components/Team";
 
 export default function Home() {
   return (
@@ -14,6 +16,9 @@ export default function Home() {
         <Speakers />
         <Sponsors />
         <Agenda />
+        <About />
+        <Faq />
+        <Team />
       </main>
     </div>
   );

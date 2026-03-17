@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nacoss Tech Fest 2026",
+  title: "Nacoss Tech Fest 2026 - The Other Side of Tech",
   description: "The Other Side of Tech; by NOVA Administration",
 };
 
