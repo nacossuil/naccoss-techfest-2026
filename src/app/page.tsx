@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
 import Agenda from "./components/Agenda";
+import Sponsors from "./components/Sponsors";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main>
         <Hero />
         <Speakers />
+        <Sponsors />
         <Agenda />
       </main>
     </div>
