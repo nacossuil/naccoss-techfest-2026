@@ -6,6 +6,7 @@ import Agenda from "./components/Agenda";
 import Sponsors from "./components/Sponsors";
 import Faq from "./components/Faq";
 import Team from "./components/Team";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Faq />
         <Team />
+        <Footer />
       </main>
     </div>
   );
