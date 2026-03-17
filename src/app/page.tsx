@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
+import Agenda from "./components/Agenda";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main>
         <Hero />
         <Speakers />
+        <Agenda />
       </main>
     </div>
   );

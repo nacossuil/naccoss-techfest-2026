@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+        <button className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(6,182,212,0.5)] cursor-pointer">
           Get Ticket
         </button>
       </div>
