@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
         
         <p className="max-w-2xl text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
-          Beyond the code. Exploring product, design, cybersecurity.
+          Step out of the syntax and into the shadows of innovation.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">

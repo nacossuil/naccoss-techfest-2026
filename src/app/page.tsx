@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        {/* <Speakers /> */}
+        <Speakers />
       </main>
     </div>
   );
