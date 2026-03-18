@@ -13,7 +13,7 @@ export default function Hero() {
                 <ScrollReveal delay={0.1}>
 
                     <div className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-semibold mb-6 tracking-wide">
-                        NACOSS TechFest 2.0
+                        NACOSS TechFest '26
                     </div>
                 </ScrollReveal>
 
