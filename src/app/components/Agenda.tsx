@@ -1,3 +1,5 @@
+import { Terminal, CalendarDays } from "lucide-react";
+
 export default function Agenda() {
   const schedule = [
     {
@@ -45,15 +47,17 @@ export default function Agenda() {
   ];
 
   return (
-    <section id="agenda" className="py-24 px-6 bg-[#0a0a0a] relative">
+    <section id="agenda" className="py-24 px-6 bg-transparent relative overflow-hidden">
+      {/* Background Huge Icon */}
+      <div className="absolute top-40 left-[-100px] opacity-10 pointer-events-none">
+        <CalendarDays size={450} className="text-[#8cfe63]" />
+      </div>
       <div className="max-w-4xl mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <span className="text-purple-500 font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        <div className="flex flex-col items-center text-center mb-16 relative z-10">
+          <span className="text-[#8cfe63] font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">
+            <Terminal size={16} className="text-[#8cfe63]" />
             Techfest Roadmap
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -71,7 +75,7 @@ export default function Agenda() {
             <div key={item.id} className="mb-12 relative pl-8 md:pl-0">
               
               {/* Glowing Timeline Node */}
-              <div className="absolute left-[-5px] md:left-1/2 md:-translate-x-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-500 shadow-[0_0_10px_rgba(6,182,212,0.8)] z-10"></div>
+              <div className="absolute left-[-5px] md:left-1/2 md:-translate-x-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#8cfe63] shadow-[0_0_15px_rgba(124,248,59,0.8)] z-10"></div>
               
               {/* Desktop Centered Line Alignment */}
               <div className="hidden md:block absolute left-1/2 top-0 bottom-[-48px] w-px bg-white/10 -translate-x-1/2"></div>
@@ -83,13 +87,10 @@ export default function Agenda() {
                 <div className="hidden md:block w-[45%]"></div>
                 
                 {/* Actual Card */}
-                <div className="w-full md:w-[45%] bg-[#111] border border-white/5 p-6 rounded-2xl hover:border-cyan-500/30 transition-colors duration-300 relative group">
+                <div className="w-full md:w-[45%] bg-transparent border-2 border-[#8cfe63]/20 p-6 rounded-2xl hover:border-[#8cfe63] transition-colors duration-300 relative group z-10">
                   
-                  {/* Subtle background gradient on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
-
                   <div className="flex flex-col gap-2 relative z-10">
-                    <span className="text-cyan-400 font-mono text-sm border border-cyan-500/20 bg-cyan-500/10 px-3 py-1 rounded-full w-fit">
+                    <span className="text-black font-bold font-mono text-sm border border-[#8cfe63] bg-[#8cfe63] px-3 py-1 rounded-full w-fit">
                       {item.time}
                     </span>
                     <h3 className="text-xl font-bold text-gray-100 mt-2">
@@ -102,12 +103,12 @@ export default function Agenda() {
                     {/* Status Indicator */}
                     <div className="mt-4 pt-4 border-t border-white/5">
                       <span className={`text-xs font-mono flex items-center gap-2 ${
-                        item.status === 'UNLOCKED' ? 'text-gray-500' : 'text-purple-400 animate-pulse'
+                        item.status === 'UNLOCKED' ? 'text-gray-500' : 'text-[#8cfe63] animate-pulse'
                       }`}>
                         {item.status === 'UNLOCKED' ? (
                           <span className="w-1.5 h-1.5 rounded-full bg-gray-500"></span>
                         ) : (
-                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#8cfe63]"></span>
                         )}
                         {item.status}
                       </span>

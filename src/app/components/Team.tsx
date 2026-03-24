@@ -19,10 +19,8 @@ export default function Team() {
   ];
 
   return (
-    <section id="team" className="py-24 px-6 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto">
-        
-        {/* Section Header */}
+    <section id="team" className="py-24 px-6 bg-transparent relative overflow-hidden">
+      <div className="max-w-7xl mx-auto z-10 relative">
         <ScrollReveal delay={0.3}>
             
         <div className="flex flex-col items-center text-center mb-16">
@@ -46,10 +44,10 @@ export default function Team() {
           {team.map((member) => (
             <div 
               key={member.id}
-              className="group relative bg-[#111] border border-white/5 rounded-xl overflow-hidden hover:border-blue-500/30 transition-all duration-300"
+              className="group relative bg-transparent border-2 border-[#8cfe63]/20 rounded-xl overflow-hidden hover:border-[#8cfe63] transition-all duration-300 z-10"
             >
               {/* Image Container */}
-              <div className="aspect-[4/5] relative overflow-hidden bg-[#1a1a1a]">
+              <div className="aspect-[4/5] relative overflow-hidden bg-transparent">
                 <Image 
                   src={member.image} 
                   alt={member.name}
@@ -59,13 +57,13 @@ export default function Team() {
                 />
                 
                 {/* Techy overlay graphic */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/40 to-transparent opacity-90 z-10 group-hover:opacity-70 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 z-10 group-hover:opacity-70 transition-opacity"></div>
                 
                 {/* Crosshairs effect on hover */}
-                <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-blue-500/0 group-hover:border-blue-500/50 transition-colors z-20"></div>
-                <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-blue-500/0 group-hover:border-blue-500/50 transition-colors z-20"></div>
-                <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-blue-500/0 group-hover:border-blue-500/50 transition-colors z-20"></div>
-                <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-blue-500/0 group-hover:border-blue-500/50 transition-colors z-20"></div>
+                <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-[#8cfe63]/0 group-hover:border-[#8cfe63]/50 transition-colors z-20"></div>
+                <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-[#8cfe63]/0 group-hover:border-[#8cfe63]/50 transition-colors z-20"></div>
+                <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-[#8cfe63]/0 group-hover:border-[#8cfe63]/50 transition-colors z-20"></div>
+                <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[#8cfe63]/0 group-hover:border-[#8cfe63]/50 transition-colors z-20"></div>
               </div>
 
               {/* Info Container */}
@@ -77,13 +75,13 @@ export default function Team() {
                   
                   {/* Nickname rendering conditionally */}
                   {member.nickname && (
-                    <span className="text-cyan-500/90 text-sm font-mono">
+                    <span className="text-[#8cfe63]/90 text-sm font-mono">
                       @{member.nickname}
                     </span>
                   )}
                 </div>
                 
-                <p className="text-blue-400 text-xs font-mono uppercase tracking-wider mt-2 drop-shadow-md">
+                <p className="text-[#8cfe63] text-xs font-mono uppercase tracking-wider mt-2 drop-shadow-[0_0_5px_rgba(124,248,59,0.5)]">
                   {member.role}
                 </p>
               </div>

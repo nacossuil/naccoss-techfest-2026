@@ -8,10 +8,10 @@ export default function Sponsors() {
   ];
 
   return (
-    <section className="py-16 bg-[#050505] border-y border-white/5 overflow-hidden relative">
+    <section className="py-16 bg-transparent border-y border-[#8cfe63]/20 overflow-hidden relative">
       {/* Left and Right Fade Overlays for a smooth entrance/exit */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 mb-10 text-center relative z-20">
         <p className="text-gray-500 font-mono text-sm tracking-widest uppercase">
@@ -30,7 +30,7 @@ export default function Sponsors() {
             {/* Replace this div with actual <Image /> tags later. 
               The grayscale filter keeps it fitting the dark theme until hovered.
             */}
-            <div className="text-2xl md:text-3xl font-bold text-gray-600 hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.5)] transition-all duration-300 cursor-pointer font-mono select-none">
+            <div className="text-2xl md:text-3xl font-bold text-gray-500 hover:text-[#8cfe63] hover:drop-shadow-[0_0_15px_rgba(124,248,59,0.5)] transition-all duration-300 cursor-pointer font-mono select-none">
               {sponsor}
             </div>
           </div>

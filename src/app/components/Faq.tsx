@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Database } from 'lucide-react';
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -33,13 +34,17 @@ export default function Faq() {
   };
 
   return (
-    <section id="faqs" className="py-24 px-6 bg-[#050505] relative border-t border-white/5">
+    <section id="faqs" className="py-24 px-6 bg-transparent relative border-t border-[#8cfe63]/20 overflow-hidden">
+      {/* Huge subtle icon */}
+      <div className="absolute top-10 right-[-50px] opacity-10 pointer-events-none">
+        <Database size={300} className="text-[#8cfe63]" />
+      </div>
       <div className="max-w-4xl mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <span className="text-purple-500 font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">
-            <svg className="w-4 h-4 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="flex flex-col items-center text-center mb-16 relative z-10">
+          <span className="text-[#8cfe63] font-mono text-sm tracking-widest uppercase mb-4 flex items-center gap-2">
+            <svg className="w-4 h-4 animate-[spin_3s_linear_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Query Database
@@ -60,8 +65,8 @@ export default function Faq() {
             return (
               <div 
                 key={index}
-                className={`bg-[#0a0a0a] border rounded-2xl transition-all duration-300 overflow-hidden ${
-                  isActive ? 'border-cyan-500/50 shadow-[0_0_15px_rgba(6,182,212,0.1)]' : 'border-white/5 hover:border-white/10'
+                className={`bg-transparent border rounded-2xl transition-all duration-300 overflow-hidden relative z-10 ${
+                  isActive ? 'border-[#8cfe63] shadow-[0_0_15px_rgba(124,248,59,0.2)]' : 'border-white/5 hover:border-[#8cfe63]/50'
                 }`}
               >
                 <button
@@ -69,14 +74,14 @@ export default function Faq() {
                   className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
                 >
                   <span className={`text-lg font-semibold pr-8 transition-colors ${
-                    isActive ? 'text-cyan-400' : 'text-gray-200'
+                    isActive ? 'text-[#8cfe63]' : 'text-gray-200'
                   }`}>
                     {faq.question}
                   </span>
                   
                   {/* Plus/Minus Icon */}
                   <div className={`shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${
-                    isActive ? 'border-cyan-500/50 bg-cyan-500/10 text-cyan-400 rotate-180' : 'border-white/10 text-gray-400 bg-white/5'
+                    isActive ? 'border-[#8cfe63] bg-[#8cfe63]/10 text-[#8cfe63] rotate-180' : 'border-white/10 text-gray-400 bg-white/5'
                   }`}>
                     <svg 
                       className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'rotate-45' : ''}`} 
