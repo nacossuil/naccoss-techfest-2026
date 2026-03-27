@@ -4,17 +4,17 @@ import ScrollReveal from './ScrollReveal';
 export default function Team() {
   const team = [
     { id: 1, name: "Laniyan Abdulqawiyy", nickname: "Cypher", role: "NACOSS President", image: "/team/cypher.jpg" },
-    { id: 2, name: "Ezekiel Precious", nickname: "Jada", role: "NACOSS Vice President", image: "/team/jada.jpeg" },
-    { id: 3, name: "Odeniyi Daniel", nickname: "Collins", role: "General Secretary", image: "/team/collins.jpeg" },
-    { id: 4, name: "Isola Oyinkansola", nickname: "Beedrop", role: "Assistant General Secretary", image: "/team/beedrop.jpeg" },
-    { id: 5, name: "Saibu Opeyemi", nickname: "Ope", role: "Welfare Secretary", image: "/team/ope.jpeg" },
+    { id: 2, name: "Ezekiel Precious", nickname: "Jada", role: "NACOSS Vice President", image: "/team/precious-11.jpeg" },
+    { id: 3, name: "Odeniyi Daniel", nickname: "Collins", role: "General Secretary", image: "/team/collins-11.jpeg" },
+    { id: 4, name: "Isola Oyinkansola", nickname: "Beedrop", role: "Assistant General Secretary", image: "/team/beedrop-1.jpeg" },
+    { id: 5, name: "Saibu Opeyemi", nickname: "Ope", role: "Welfare Secretary", image: "/team/ope-11.jpeg" },
     { id: 6, name: "Bello Oyebanji", nickname: "Engr. Bello", role: "Financial Secretary", image: "/team/bello.jpeg" },
-    { id: 7, name: "Ibrahim Abdulman", nickname: "Razz", role: "Social Director I", image: "/team/razz.jpeg" },
-    { id: 8, name: "Ajibola Hilary", nickname: "Hilary", role: "Social Director II", image: "/team/hilary.jpeg" },
-    { id: 9, name: "Ogunyemi Ayodele", nickname: "Hallelujah", role: "PRO", image: "/team/ayodele.jpeg" },
+    { id: 7, name: "Ibrahim Abdulrahman", nickname: "Razz", role: "Social Director I", image: "/team/razz-1.jpeg" },
+    { id: 8, name: "Precious Aborisade Hillary", nickname: "Hillary", role: "Social Director II", image: "/team/hilary-1.jpeg" },
+    { id: 9, name: "Ogunyemi Ayodele", nickname: "Ayodele", role: "PRO", image: "/team/ayodele.jpeg" },
     { id: 10, name: "Mojiboye Emmanuel", nickname: "Dynasty", role: "Software Director I", image: "/team/dynasty.png" },
     { id: 11, name: "Alabi Ameer", nickname: "Ameer", role: "Software Director II", image: "/team/ameer.jpg" },
-    { id: 12, name: "Adeshina Samuel", nickname: "Samuuuu", role: "Sports Secretary", image: "/team/samuuuu.png" },
+    { id: 12, name: "Adeshina Samuel", nickname: "Samuel", role: "Sports Secretary", image: "/team/samuuuu.png" },
     // { id: 6, name: "Emily Davis", role: "Sponsorships", image: "/team/emily.jpg" }, // No nickname example
   ];
 
@@ -32,7 +32,7 @@ export default function Team() {
             SYSTEM ADMINISTRATORS
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">
-            The operators running the mainframe. Meet the team bringing NACOSS TechFest 2.0 to life.
+            The operators running the mainframe. Meet the team bringing NACOSS TechFest'26 to life.
           </p>
         </div>
 
