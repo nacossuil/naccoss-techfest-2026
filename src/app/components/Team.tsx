@@ -9,7 +9,7 @@ export default function Team() {
     { id: 4, name: "Isola Oyinkansola", nickname: "Beedrop", role: "Assistant General Secretary", image: "/team/beedrop-1.jpeg" },
     { id: 5, name: "Saibu Opeyemi", nickname: "Ope", role: "Welfare Secretary", image: "/team/ope-11.jpeg" },
     { id: 6, name: "Bello Oyebanji", nickname: "Engr. Bello", role: "Financial Secretary", image: "/team/bello-1.jpeg" },
-    { id: 7, name: "Ibrahim Abdulrahman", nickname: "Razz", role: "Social Director I", image: "/team/razz-1.jpeg" },
+    { id: 7, name: "Ibrahim Abdulrahman", nickname: "Raz", role: "Social Director I", image: "/team/razz-1.jpeg" },
     { id: 8, name: "Precious Aborisade Hillary", nickname: "Hillary", role: "Social Director II", image: "/team/hilary-1.jpeg" },
     { id: 9, name: "Ogunyemi Ayodele", nickname: "Ayodele", role: "PRO", image: "/team/ayodele-1.jpeg" },
     { id: 10, name: "Mojiboye Emmanuel", nickname: "Dynasty", role: "Software Director I", image: "/team/dynasty-1.png" },

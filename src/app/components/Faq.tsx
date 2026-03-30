@@ -13,7 +13,7 @@ export default function Faq() {
     },
     {
       question: "Is the event entirely free?",
-      answer: "Yes, access to NACOSS TechFest 2.0 is 100% free for Unilorin students, but registration is strictly required as venue capacity is limited to 1,000 nodes."
+      answer: "Yes, access to NACOSS TechFest'26 is 100% free for Unilorin students, but registration is strictly required as venue capacity is limited to 1,000 nodes."
     },
     {
       question: "Will there be food and swags?",

@@ -64,7 +64,7 @@ export default function Agenda() {
             EVENT PROTOCOL
           </h2>
           <p className="text-gray-400 text-lg">
-            The master schedule for TechFest 2.0. Sequence subject to optimization.
+            The master schedule for TechFest'26. Sequence subject to optimization.
           </p>
         </div>
 

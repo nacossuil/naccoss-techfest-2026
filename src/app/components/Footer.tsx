@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <span className="text-2xl font-black text-[#8cfe63] tracking-tighter shadow-sm">
-                TECHFEST 2.0
+                TECHFEST'26
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">

@@ -33,7 +33,7 @@ export default function About() {
 
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
-                                NACOSS TechFest 2.0 is a journey beyond what you see on the surface. Beyond clean syntax, polished UIs, and deployed applications lies a deeper layer of technology — one that truly drives innovation.
+                                NACOSS TechFest'26 is a journey beyond what you see on the surface. Beyond clean syntax, polished UIs, and deployed applications lies a deeper layer of technology — one that truly drives innovation.
                             </p>
 
                             <p>
