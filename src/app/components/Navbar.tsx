@@ -52,8 +52,10 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-[#8cfe63] text-black font-semibold py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(124,248,59,0.5)] cursor-pointer">
-          Get Ticket
+        <button  className="bg-[#8cfe63] text-black font-semibold py-2.5 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(124,248,59,0.5)] cursor-pointer">
+        <Link href='https://luma.com/4u5ghhmo'>
+ Get Ticket
+        </Link> 
         </button>
       </div>
     </nav>

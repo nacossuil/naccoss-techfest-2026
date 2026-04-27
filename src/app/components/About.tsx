@@ -2,10 +2,10 @@ import { Users, Mic, Calendar, Clock, Binary } from "lucide-react";
 
 export default function About() {
     const stats = [
-        { label: "ATTENDEES", value: "1,000+", icon: <Users size={32} className="text-[#8cfe63]" /> },
+        { label: "ATTENDEES", value: "500+", icon: <Users size={32} className="text-[#8cfe63]" /> },
         { label: "SPEAKERS", value: "10+", icon: <Mic size={32} className="text-[#8cfe63]" /> },
-        { label: "SESSIONS", value: "8", icon: <Calendar size={32} className="text-[#8cfe63]" /> },
-        { label: "HOURS OF VALUE", value: "12", icon: <Clock size={32} className="text-[#8cfe63]" /> },
+        { label: "SESSIONS", value: "4", icon: <Calendar size={32} className="text-[#8cfe63]" /> },
+        { label: "HOURS OF VALUE", value: "5", icon: <Clock size={32} className="text-[#8cfe63]" /> },
     ];
 
     return (

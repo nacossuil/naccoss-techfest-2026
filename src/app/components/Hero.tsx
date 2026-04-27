@@ -68,7 +68,7 @@ export default function Hero() {
                         <div className="hidden md:block w-px h-12 bg-white/10"></div>
                         <div className="text-center md:text-left">
                             <p className="text-gray-400 text-center text-sm uppercase tracking-widest mb-1">Location</p>
-                            <p className="text-xl text-center font-bold text-gray-100">To be Announced Very soon</p>
+                            <p className="text-xl text-center font-bold text-gray-100">Multipurpose Hall (Unilorin)</p>
                         </div>
 
 
