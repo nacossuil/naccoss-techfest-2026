@@ -1,0 +1,15 @@
+/* Hide horizontal scrollbar on desktop, show on mobile */
+.partners-carousel-scrollbar::-webkit-scrollbar {
+  height: 0px;
+}
+.partners-carousel-scrollbar {
+  scrollbar-width: none;
+}
+@media (max-width: 768px) {
+  .partners-carousel-scrollbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .partners-carousel-scrollbar {
+    scrollbar-width: thin;
+  }
+}
