@@ -120,7 +120,7 @@ export default function Speakers() {
     ];
 
     // Helper to format filename to display name (remove extension)
-    const getSpeakerName = (filename) => filename.replace(/\.png$/i, "");
+    const getSpeakerName = (filename: string) => filename.replace(/\.png$/i, "");
 
     return (
         <section id="speakers" className="py-24 px-6 bg-[#050505]">
